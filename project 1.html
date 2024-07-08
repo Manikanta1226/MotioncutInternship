@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <style>
+      
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            height: 100vh; 
+            gap: 10px;
+            background-color: #72cec3;
+            border-radius: 8px;
+        }
+
+        #category-dropdown {
+            padding: 8px;
+            border: 3px solid #7400a6;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        #search-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 225px;
+        }
+
+        #search-button {
+            padding: 8px 16px;
+            background-color: #a60090;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #search-button:hover {
+            background-color: #a60090;
+        }
+
+        body {
+            background-color: rgb(43, 223, 226);
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <select id="category-dropdown">
+            <option value="everything">Everything</option>
+            <option value="software-dev">Software Development</option>
+            <option value="web-dev">Web Development</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="it-consultant">IT Consultant</option>
+            <option value="network-admin">Network Administrator</option>
+        </select>
+        <input type="text" id="search-input" placeholder="Search Anything">
+        <button id="search-button">Search</button>
+    </div>
+</body>
+</html>
